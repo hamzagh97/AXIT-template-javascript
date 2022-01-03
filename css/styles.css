@@ -1,0 +1,503 @@
+/* start global */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+section p {
+    color: gray;
+    font-weight: bold;   
+}
+
+hr {
+    width: 70px;
+    border: 1px solid orangered;
+}
+
+
+
+/* navbar */
+
+
+.navbar {
+}
+
+.navbar-inverse{
+    border-radius: 0px;
+    background-color: #000;
+    border: none;
+}
+
+.navbar-inverse .navbar-brand {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold
+}
+
+.navbar-inverse .navbar-brand span {
+    color: orangered;
+    font-weight: normal;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+.navbar-inverse .navbar-nav>li>a.active {
+    color: orangered;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: orangered;
+}
+/*end navbar*/
+
+/* start fixed-menu */
+.fixed-menu {
+    height: 100%;
+    background-color: #000;
+    width: 240px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: -240px;
+    padding-top: 50px;
+}
+
+.fixed-menu ul {
+    color: #fff;
+    list-style: none;
+    height: 100%;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0px;
+}
+
+.fixed-menu ul li {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    position: relative;
+    text-align: center;
+}
+
+.fixed-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+
+.fixed-menu i {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #000;
+    padding: 8px 10px 8px 13px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+/* end fixed-menu */
+
+
+/*start header*/
+.header {
+    background-color: grey;
+    text-align: left;
+}
+
+.header .discription h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 60px;
+    color: #fff;
+}
+
+.header .discription h1 span {
+    font-weight: normal;
+    color: orangered;
+}
+
+.header .discription p.lead {
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.header hr {
+    width: 70px;
+    float: left;
+    border: 1px solid orangered;
+}
+
+.header .discription p {
+    color: lightgray;
+}
+
+.header .discription button {
+    color: #fff;
+    text-transform: capitalize;
+    background-color: transparent;
+    padding: 5px 20px;
+    border: 2px solid #fff;
+    margin-top: 40px;
+}
+
+.header .start {
+    margin-top: 50px;
+}
+
+.header .start form {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header .start form h3 {
+    background-color: lightgray;
+    padding: 15px;
+    margin-top: 0px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header .start form h3 span {
+    color: orangered;
+    text-transform: uppercase;
+}
+
+.header .start form input {
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    text-transform: capitalize;
+    width: 80%;
+    margin: 40px auto;
+    font-weight: bold;
+}
+
+.header .start form button {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: orangered;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0px;
+}
+/* end header */
+
+/* start social-media */
+.social-media {
+    padding: 5px 0px;
+    box-shadow: -2px -5px 13px #000;
+    text-align: left;
+}
+
+.social-media .text h4 {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.social-media .text p {
+    color: gray;
+    font-weight: bold;
+}
+/* end social-media */
+
+ /* start section-tabs */
+.section-tabs {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: lightgray;
+    text-align: left;
+}
+
+.section-tabs .tabs {
+}
+
+.section-tabs .tabs button {
+    padding: 35px 25px;
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section-tabs .tabs button.active {
+    background-color: orangered;
+}
+
+.section-tabs .text {
+}
+
+.section-tabs .text h3 {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.section-tabs .text p {
+    color: gray;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.section-tabs .text button {
+    padding: 10px 20px;
+    background-color: orangered;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.section-tabs .photo {
+}
+ /* end section-tabs */
+
+
+ /* start sublist */
+.sub-list {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: left;
+}
+
+.sub-list .text h3 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.sub-list .text hr {
+    float: left;
+}
+
+.sub-list .text h5 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.sub-list .text p {
+    color: gray;
+    font-weight: bold;
+}
+
+
+ /* end sublist */
+
+ /* start this is awesome */
+.awesome {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.awesome h1 {
+    text-transform: uppercase;
+}
+
+.awesome hr {
+    float: none;
+}
+
+.awesome p {
+    color: gray;
+    font-weight: bold;
+}
+
+.awesome .row {
+    margin-top: 50px;
+}
+
+.awesome .row h4 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+ /* end this is awesome */
+
+ /* start pricing */
+.pricing {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.pricing hr {
+    float: none;
+}
+
+
+.pricing .row {
+    margin-top: 50px;
+}
+
+
+.box,
+.box2 {
+    height: auto;
+    width: 322px;
+    background-color: black;
+}
+
+.box2 {
+    margin-top: 59px;
+}
+
+
+.box h3,
+.box2 h3 {
+    color: white;
+    text-transform: capitalize;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+
+.box .price .dollar,
+.box2 .price .dollar {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+.box .price .number,
+.box2 .price .number {
+    margin-bottom: 20px;
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.box h4,
+.box2 h4 {
+    color: lightgray;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
+.box .popular,
+.box2 .popular {
+    background-color: orangered;
+    padding: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.box ul,
+.box2 ul {
+    text-decoration: none;
+    list-style: none;
+    color: gray;
+    padding-left: 0px;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.box ul li,
+.box2 ul li {
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+
+.box.popular,
+.box2 .popular {
+    background-color: orangered;
+    padding: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.box2 .popular {
+    padding: 5px;
+}
+
+.box ul,
+.box2 ul {
+    text-decoration: none;
+    list-style: none;
+    color: gray;
+    padding-left: 0px;
+    background-color: #fff;
+    font-weight: bold;
+}
+.box ul li,
+.box2 ul li {
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+
+
+ /* end pricing */
+
+ /* start testimonials */
+
+
+
+ /* end testimonials */
+
+
+/* start media */
+ @media only screen and (max-width: 1000px) {
+    .header {
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .header hr {
+        float: none;
+        margin-bottom: 0px;
+    }
+
+    .header .discription p {
+        margin-top: 0px;
+    }
+
+    .header .discription button {
+        margin-top: 15px;
+    }
+
+    .box2 {
+        margin-top: 0px;
+    }
+
+    .section-tabs .tabs {
+        text-align: center;
+    }
+
+    .section-tabs .text {
+        margin-top: 20px;
+    }
+
+}
