@@ -5,43 +5,31 @@
   <title>test</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
 </head>
 
 <body>
-  <!-- start navbar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar">
     <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
         <a class="navbar-brand" href="#">ax<span>it</span></a>
-      </div>
-  
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="" data-scroll="head" class="active">features</a></li>
-          <li><a href="" data-scroll="about">about</a></li>
-          <li><a href="" data-scroll="price">pricing</a></li>
-          <li><a href="" data-scroll="reviews">reviews</a></li>
-          <li><a href="" data-scroll="cont">contact</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
+        <button type="button" class="navbar-toggle">
+          <span class="icon-bar-1"></span>
+          <span class="icon-bar-2"></span>
+          <span class="icon-bar-3"></span>
+        </button>
+        <div class="navigation">
+          
+          <ul class="navbar-right">
+            <li><a href="" data-scroll="#head" class="active">features</a></li>
+            <li><a href="" data-scroll="#about">about</a></li>
+            <li><a href="" data-scroll="#price">pricing</a></li>
+            <li><a href="" data-scroll="#reviews">reviews</a></li>
+            <li><a href="" data-scroll="#cont">contact</a></li>
+          </ul>
+        </div>
+    </div>
   </nav>
-  <!-- end navbar -->
 
   <!-- start fixed left menu -->
   <div class="fixed-menu">
@@ -58,51 +46,44 @@
 
   <!-- start header -->
   <section class="header" id="head">
-    <div class="container">
-      <div class="row">
-        <div class="discription col-md-6">
-          <h1 id="jjj">ax<span>it</span></h1>
-          <p class="lead" id="kkk">
-            modern axure template for beautiful prototypes
-          </p>
-  
-          <hr>
-  
-          <br>
-          <br class="hidden-xs">
-          <br>
-            <p>Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-              <button>download</button>    
-        </div>
-        <div class="start col-md-6">
-          <form action="" class="form-group center-block">
-            <h3>try your <span>free</span> trial today</h3>
-            <input type="text" placeholder="name" class="form-control">
-            <input type="text" placeholder="e-mail" class="form-control">
-            <input type="text" placeholder="password" class="form-control">
-            <button class="btn btn-block">get started</button>
-          </form>
+    <div class="overlay"></div>
+      <div class="container">
+          <div class="discription">
+            <p>ax<span>it</span></p>
+            <p class="lead">
+              modern axure template for beautiful prototypes
+            </p>
+              <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                <button>download</button>    
+          </div>
+          <div class="start">
+            <form action="" class="form-group center-block">
+              <p>try your <span>free</span> trial today</p>
+              <input type="text" placeholder="name" class="form-control">
+              <input type="text" placeholder="e-mail" class="form-control">
+              <input type="text" placeholder="password" class="form-control">
+              <button class="btn btn-block">get started</button>
+            </form>
         </div>
       </div>
-    </div>
   </section>
   <!-- end header -->
 
   <!-- start social-media -->
- <section class="social-media">
+ <section class="social-media" id="about">
    <div class="container">
     <div class="row">
-      <div class="text col-md-4">
+      <div class="text">
         <h4>social-media</h4>
         <p>Lorem ipsum dolor sit amet,
           consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore</p>
       </div>
-      <div class="logo col-md-8">
+      <div class="logo">
         test
       </div>
     </div>
@@ -113,33 +94,64 @@
  <!-- start section-tabs -->
 <section class="section-tabs" id="about">
   <div class="container">
-    <div class="row">
-      <div class="tabs col-md-2 col-xs-12">
-        <button class="active col-xs-12">tab 1</button>
-        <button class="col-xs-12">tab 2</button>
-        <button class="col-xs-12">tab 3</button>
+      <div class="tabs">
+        <button data-show=".text1" class="active">tab 1</button>
+        <button data-show=".text2">tab 2</button>
+        <button data-show=".text3">tab 3</button>
       </div>
-      <div class="text col-md-6 col-xs-12">
-        <h3>tabs with soft transitioning effect</h3>
-        <p>Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore
-          Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore
-          Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.</p>
+      <div class="content">
+        <div class="text1 activetext" style="display: none;">
+          <h3>tabs with soft transitioning effect 1</h3>
+          <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.</p>
           <p>Lorem ipsum dolor sit amet,
             consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore
             Lorem ipsum dolor sit amet.</p>
-            <button>donwload</button>
-  
+          <button>donwload</button>
+        </div>
+        <div class="text2" style="display: none;">
+          <h3>tabs with soft transitioning effect 2</h3>
+          <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore
+            Lorem ipsum dolor sit amet.</p>
+          <button>donwload</button>
+        </div>
+        <div class="text3" style="display: none;">
+          <h3>tabs with soft transitioning effect 3</h3>
+          <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore
+            Lorem ipsum dolor sit amet.</p>
+          <button>donwload</button>
+        </div>
       </div>
-      <div class="photo col-md-4 col-xs-12">
-        test
+      <div class="image">
+        <img src="images/buildings.jpg" alt="">
       </div>
-    </div>
   </div>
 </section>
 <!-- end section- tabs -->
@@ -148,31 +160,27 @@
 <section class="sub-list" id="about">
   <div class="container">
     <div class="row">
-      <div class="img col-md-6">
+      <div class="img">
         img
       </div>
-      <div class="text col-md-6">
+      <div class="text">
         <h3>sub list section</h3>
-        <hr>
-        <br>
-        <br>
-        <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
         sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet,
         consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing</p>
           <div class="row">
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            <div class="">
               icon
             </div>
-            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+            <div class="">
               <h5>title</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+            <div class="">
               icon
             </div>
-            <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+            <div class="">
             <h5>title</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               lorem ipsum dolor sit amet, consectetur adipiscing,Lorem ipsum dolor sit amet,
@@ -192,12 +200,8 @@
 <section class="sub-list" id="about" style="background-color: lightgray;">
   <div class="container">
     <div class="row">
-      <div class="text col-md-6">
+      <div class="text">
         <h3>standard picture section</h3>
-        <hr>
-        <br>
-        <br>
-        <br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
         sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet,
         consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing
@@ -206,7 +210,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         lorem ipsum dolor sit amet, consectetur adipiscing</p>
         </div>
-      <div class="img col-md-6">
+      <div class="img">
         img
       </div>
     </div>
@@ -217,26 +221,24 @@
 <!-- start this is awesome -->
 <section class="awesome" id="about">
   <div class="container">
-    <h1>why this is awesome</h1>
-  <hr>
-  <br>
+  <h1>why this is awesome</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
   <div class="row">
-    <div class="col-md-4">
+    <div class="">
       <div>
         icon
         <h4>thoughtful design</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet.</p>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="">
       <div>
         icon
         <h4>well crafted</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet.</p>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="">
       <div>
         icon
         <h4>easy to customize</h4>
@@ -254,16 +256,13 @@
 <section class="pricing" id="price">
   <div class="container">
     <h1>pricing options</h1>
-    <hr>
-    <br>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="box2 center-block">
-          <h3>basic</h3>
-          <span class="price">
-            <span class="dollar">$</span><span class="number">0</span>
-          </span>
+    <div class="boxes">
+        <div class="box2">
+          <h4>basic</h4>
+          <div class="price">
+            <span class="dollar">$</span><span class="number" data-goal="0">0</span>
+          </div>
           <h4>monthly payment</h4>
           <h4 class="popular"></h4>
           <ul>
@@ -276,13 +275,11 @@
           </ul>
         </div>
         
-      </div>
-      <div class="col-md-4">
-        <div class="box center-block">
-          <h3>professional</h3>
-          <span class="price">
-            <span class="dollar">$</span><span class="number">19</span>
-          </span>
+        <div class="box">
+          <h4>professional</h4>
+          <div class="price">
+            <span class="dollar">$</span><span class="number" data-goal="19">0</span>
+          </div>
           <h4>monthly payment</h4>
           <h4 class="popular">our most popular</h4>
           <ul>
@@ -295,13 +292,11 @@
           </ul>
         </div>
         
-      </div>
-      <div class="col-md-4">
-        <div class="box2 center-block">
-          <h3>entreprise</h3>
-          <span class="price">
-            <span class="dollar">$</span><span class="number">70</span>
-          </span>
+        <div class="box2">
+          <h4>entreprise</h4>
+          <div class="price">
+            <span class="dollar">$</span><span class="number" data-goal ="70">0</span>
+          </div>
           <h4>monthly payment</h4>
           <h4 class="popular"></h4>
           <ul>
@@ -314,28 +309,86 @@
           </ul>
         </div>
         
-      </div>  
-</section>
-
-<section class="testimonials" id="reviews" style="background-color: white;">
-  <div class="container">
-    <h1>what our customers are saying</h1>
-    <hr>
-    <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-  </div>
+    </section>
 <!-- end pricing -->
 
 <!-- start reviews -->
+<section class="testimonials reviews" id="reviews" style="background-color: white;">
+  <div class="container">
+    <h1>what our customers are saying</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <div class="feedbacks">
+      <div class="feedback">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, aliquam? Deserunt expedita accusantium repellat qui animi. Vitae in minima consectetur porro fugiat?</p>
+        <div class="member">
+          <img src="images/member.jpg" alt="">
+          <div class="info">
+            <span class="name">jeremy H.</span>
+            <span class="work">Manager</span>
+          </div>
+        </div>
+      </div>
+      <div class="feedback">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla nihil eius temporibus dolore labore reprehenderit ab perferendis recusandae impedit dolorum?</p>
+        <div class="member">
+          <img src="images/member.jpg" alt="">
+          <div class="info">
+            <span class="name">John S.</span>
+            <span class="work">Freelancer</span>
+          </div>
+        </div>
+      </div>
+      <div class="feedback">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error aliquam quidem voluptatibus explicabo magni accusantium veniam sunt a ratione! Voluptates mollitia magnam?</p>
+        <div class="member">
+          <img src="images/member.jpg" alt="">
+          <div class="info">
+            <span class="name">Susan W.</span>
+            <span class="work">Photographer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="reviews-footer">
+    <div class="overlay"></div>
+      <h1>stylish axure design</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <button>download</button>
+  </div>
+</section>
 <!-- end reviews -->
+  
+
 
 <!-- start contact -->
+<section class="contact" id="cont">
+  <div class="container">
+    <h1>contact us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <form action="">
+      <div class="inner-form">
+        <div class="info">
+          <input type="text" placeholder="name">
+          <input type="text" placeholder="email">
+          <input type="text" placeholder="subject"> 
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+      </div>
+      <input type="submit" value="send-message">
+    </form>
+  </div>
+</section>
 <!-- end contact -->
 
 <!-- start footer -->
+<footer>
+  
+</footer>
 <!-- end footer -->
 
-
+<script src="js/main.js"></script>
 </body>
 
 </html>
